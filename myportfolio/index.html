@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #f9f9f9;
+            color: rgb(0, 0, 0);
+            padding: 1rem 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f9f9f9;
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #ddd;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem;
+            font-weight: normal;
+            opacity: 0.6;
+            transition: all 0.3s ease;
+        }
+
+        nav a.active {
+            font-weight: bold;
+            opacity: 1;
+        }
+
+        nav a:hover {
+            opacity:1;
+        }
+
+        .container {
+            padding: 1rem;
+            max-width:700px;
+            margin: 0 auto;
+        }
+
+        .project-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1.0rem;
+            margin-bottom: 1rem;
+        }
+       
+        .project-item img {
+            width:100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 0.5rem;
+        }
+
+
+        .project-item h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .project-item p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+        .project-item a {
+            display: inline-block;
+            margin: 0.5rem 0;
+            padding: 0.5rem 1rem;
+            color: #333;
+            background-color: transparent;
+            text-decoration: none;
+            border: 1px solid #333;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .project-item a:hover {
+            background-color: #333;
+            color: white;
+        }
+        footer {
+            background-color: #f9f9f9;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   
+
+    <nav>
+        <a href="index.html" class="active">PORTFOLIO</a>
+        <a href="reflection.html">REFLECTION</a>
+        <a href="about.html">ABOUT ME</a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="u-full-width title-header animate-reveal animate-firs" style="margin-top: 10%">
+                <h2 class="myname">Said Hamza YILMAZ</h2>
+                <h4>Jr. UX Designer | Bachelor student studying Computer Science</h4>
+            </div>
+        <section id="projects" class="projects">
+           
+            <div class="project-item">
+                <img src="project1-image.jpg" alt="Project 1 Image">
+                <h3>RoboGuide</h3>
+                <p>What else can food delivery robots do ?</p>
+                <a href="uiuxproject1.pdf" download>Download Project Document</a>
+            </div>
+            <div class="project-item">
+                <img src="project2-image.jpg" alt="Project 2 Image">
+                <h3>Improving The Shopping Experience</h3>
+                <p>Improve the SDU Canteen shopping experience by addressing customer needs and reducing long wait times.</p>
+                <a href="https://www.youtube.com/watch?v=opKnzmjWbGc&ab_channel=SaidHamzaYilmaz" target="_blank">Watch The Presentation Video</a>
+            </div>
+            <div class="project-item">
+                <img src="project3-image.jpg" alt="Project 3 Image">
+                <h3>Sleeping Behavior Change</h3>
+                <p>Develop a sleep tracking app for wearables to help students improve sleep habits.</p>
+                <a href="uiuxproject3documents.pdf"download>Download Project Documents</a>
+                <a href="https://www.youtube.com/watch?v=t7m4ItwuLEg&ab_channel=AnsarNurzhanov" target="_blank">Watch The Presentation Video</a>
+            </div>
+        </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>
